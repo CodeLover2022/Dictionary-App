@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:hint="Enter your word"
+        android:elevation="8dp"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="find"
+        android:id="@+id/btn"
+        app:cornerRadius="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/et_name"
+        app:layout_constraintStart_toStartOf="@+id/et_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>
