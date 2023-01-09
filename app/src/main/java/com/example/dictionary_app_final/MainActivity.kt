@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             val api="e39d4701-1638-4851-b8cd-2884bf902dad"
             val word=et_name.text.toString()
             val url="https://www.dictionaryapi.com/api/v3/references/learners/json/$word?key=$api"
-           // val url="https://api.dictionaryapi.dev/api/v2/entries/en/$word"
+          
             val request= StringRequest(Request.Method.GET,url,
             {
                 response ->
